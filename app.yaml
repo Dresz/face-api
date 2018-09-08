@@ -1,17 +1,3 @@
-version: "2"
-jobs:
-  build:
-    docker:
-      - image: circleci/golang:1.8.0
-
-    working_directory: /go/src/github/Dresz/face-api
-
-    steps:
-      - checkout
-      - run:
-          name: Get dependencies
-          command: go get -v
-
-      - run:
-          name: Check code style
-          command: go vet ./...
+runtime: go
+api_version: go1
+vn: true
