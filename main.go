@@ -11,7 +11,7 @@ func main() {
 
 	url := "https://graph.facebook.com/v3.1/685148168507218/feed?"
 
-	payload := strings.NewReader("message=Alerta&access_token=EAADNGF3mxwMBAOtNbGNu9ZC0lgNQpjQkO5nzCvC4CHZCZBXNuUJOSwxp1ZBMFXa1sHMhahnQZAWaY7HHCfJ7BxGv9Ao63otuqdH7v6U7pjIwuOjU8oZAT5EZBa4i55QcF5JZBJetZCYfi90wrH6O7li82Ja8DreWZAJmi3kbUQT541qhdWrCYY6hneIkaZCLUprsxirM7sTZAQF4HwZDZD")
+	payload := strings.NewReader("message=Incendio%20En%20Mi%20Casa%20Alerta&access_token=EAADNGF3mxwMBAOtNbGNu9ZC0lgNQpjQkO5nzCvC4CHZCZBXNuUJOSwxp1ZBMFXa1sHMhahnQZAWaY7HHCfJ7BxGv9Ao63otuqdH7v6U7pjIwuOjU8oZAT5EZBa4i55QcF5JZBJetZCYfi90wrH6O7li82Ja8DreWZAJmi3kbUQT541qhdWrCYY6hneIkaZCLUprsxirM7sTZAQF4HwZDZD")
 
 	req, _ := http.NewRequest("POST", url, payload)
 
